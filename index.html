@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Import Vue.js -->
+    <script src="https://unpkg.com/vue@next"></script>
+
+    <!-- Import Mount  -->
+    <script src="./vueApps.js"></script>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+
+    <title>Apps Factory Challenge</title>
+</head>
+
+<body>
+
+    <div id="mainContainer">
+
+
+        <h1>MY MILL</h1>
+
+        <div id="inputFields">
+            <label for="email">E-MAIL</label>
+            <input type="email" placeholder="Enter email">
+
+            <label for="password">PASSWORD </label>
+            <div id="eyePosition">
+                <input type="password" placeholder="Enter password">
+                <img src="./images/eye (1).svg" alt="">
+            </div>
+        </div>
+
+        <div id="recoverPass">
+            <p>Forgot password? Recover here <img src="./images/lock.svg" alt=""></p>
+        </div>
+
+        <div id="checkbox">
+            <input type="checkbox" name="t&c"> I agree to the TERMS AND CONDITIONS
+        </div>
+
+
+        <button>LOG IN</button>
+    </div </div>
+
+    <script>
+        dynamic.mount('#mainContainer')
+    </script>
+</body>
+
+</html>
