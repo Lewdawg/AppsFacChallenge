@@ -13,7 +13,9 @@
     <script src="https://unpkg.com/vue@next"></script>
 
     <!-- Import Mount  -->
-    <script src="./vueApps.js"></script>
+    <!-- <script src="./vue/buttonClick.vue"></script>-->
+    <script src="./vue/testBut.js"></script>
+    <!-- <script src="./main.js"></script> -->
 
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -23,9 +25,7 @@
 </head>
 
 <body>
-
     <div id="mainContainer">
-
 
         <h1>MY MILL</h1>
 
@@ -41,19 +41,22 @@
         </div>
 
         <div id="recoverPass">
-            <p>Forgot password? Recover here <img src="./images/lock.svg" alt=""></p>
+            <p>Forgot password? Recover here <img src="./images/lock.svg" alt="">
+            </p>
         </div>
 
         <div id="checkbox">
             <input type="checkbox" name="t&c"> I agree to the TERMS AND CONDITIONS
         </div>
 
+        <div id="button">
+            <button>{{isLogin}}</button>
+        </div>
 
-        <button>LOG IN</button>
-    </div </div>
+    </div>
 
     <script>
-        dynamic.mount('#mainContainer')
+        isLogin.mount('#button')
     </script>
 </body>
 

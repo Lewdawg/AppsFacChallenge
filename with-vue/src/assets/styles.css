@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    color: navy;
+}
+
+body {
+    background: url('./pexels-ronaldo-santos-1762182.jpg'), rgba(65, 131, 215, .5);
+    background-size: cover;
+    background-blend-mode: multiply;   /* ← Gives the background an image and a color opacity*/
+
+    /* top: 0;
+    position: fixed;
+    width: 100%;
+    height: 100%; */
+}
+@media only screen and (min-width: 474px){
+    body {
+        font-size: 1.1rem;
+    }
+}
