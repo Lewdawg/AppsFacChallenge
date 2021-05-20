@@ -16,12 +16,10 @@
 </template>
 
 
-
-
 <script>
 import InputLabel from "./InputLabel";
 
-//':' keeps the type attribute (or any other) up to date with the value of the passwordFieldType property. (in this case)
+//(line 9)':' keeps the type attribute (or any other) up to date with the value of the passwordFieldType property. (in this case)
 
 export default {
   name: "InputFields",
@@ -111,7 +109,7 @@ export default {
 }
 @media only screen and (min-width: 1040px) {
   #eyePosition img {
-    bottom: 7px;
+    bottom: 6px;
     right: 15px;
   }
 }

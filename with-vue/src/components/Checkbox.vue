@@ -17,14 +17,16 @@ module.exports = {
   name: "Checkbox",
   data: function () {
     return {
-      isActive: true,
+      isActive: true, //←fills checkbox by default
       terms: "I agree to the TERMS AND CONDITIONS",
     };
   },
   Methods: {
     return: {
+      // ↓ @click = onclick and onclick fire off this event
       noTandC() {
-        this.$emit("input", this.isActive);
+        // ↓ push (bubbling up) 'input' event back up to the parent (App.vue)
+        this.$emit("input");
       },
     },
   },

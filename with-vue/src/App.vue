@@ -4,9 +4,12 @@
     <Input-fields />
     <Recover-pass />
     <Checkbox @input="updateButton" />
-    <Login-button v-if="isActive" />
+    <Login-button v-model="showButton" v-if="showButton" />
   </form>
 </template>
+
+// @input - listening out for an 'input' event and when it hears that event triggers it's own method.
+// v-model in a nutshell - holds current value and accept's new value when changed.
 
 <script>
 import Title from "./components/Title";
@@ -19,13 +22,13 @@ export default {
   name: "App",
   data() {
     return {
-      isActive: true,
+      showButton: true,
     };
   },
   methods: {
-    updateButton(isActive) {
-      this.isActive = isActive;
-      console.log("this is working", this.isActive);
+    updateButton() {
+      this.showButton = !this.showButton;
+      console.log("I come from App.vue", this.showButton);
     },
   },
   components: {
