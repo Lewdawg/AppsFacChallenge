@@ -3,8 +3,8 @@
     <Title />
     <Input-fields />
     <Recover-pass />
-    <Checkbox />
-    <Login-button @isActive="updateButton" />
+    <Checkbox @input="updateButton" />
+    <Login-button v-if="isActive" />
   </form>
 </template>
 
@@ -18,7 +18,15 @@ import LoginButton from "./components/LoginButton";
 export default {
   name: "App",
   data() {
-    return {};
+    return {
+      isActive: true,
+    };
+  },
+  methods: {
+    updateButton(isActive) {
+      this.isActive = isActive;
+      console.log("this is working", this.isActive);
+    },
   },
   components: {
     Title,

@@ -24,9 +24,7 @@ module.exports = {
   Methods: {
     return: {
       noTandC() {
-        if (this.isActive === false) {
-          this.$emit(isActive);
-        }
+        this.$emit("input", this.isActive);
       },
     },
   },

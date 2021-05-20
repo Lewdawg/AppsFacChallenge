@@ -111,6 +111,7 @@ export default {
 }
 @media only screen and (min-width: 1040px) {
   #eyePosition img {
+    bottom: 7px;
     right: 15px;
   }
 }
