@@ -5,18 +5,11 @@
 <script>
 module.exports = {
   name: "Button",
-  data: function () {
+
+  data() {
     return {
       isLogin: "LOG IN",
-      reverseColor: "navy",
-      reversebgColor: "none",
-      isDisabled: "disabled",
     };
-  },
-  methods: {
-    updateButton() {
-      <button style="{ backgroundColor: reversebgColor, color: reverseColor, isDisabled }"></button>;
-    },
   },
 };
 </script>

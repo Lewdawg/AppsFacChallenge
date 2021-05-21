@@ -8,7 +8,7 @@
   </form>
 </template>
 
-// @input - listening out for an 'input' event and when it hears that event triggers it's own method.
+// @input - listening out for an 'input' event from Checkbox and when it hears that event triggers it's own method.
 // v-model in a nutshell - holds current value and accept's new value when changed.
 
 <script>
@@ -27,7 +27,7 @@ export default {
   },
   methods: {
     updateButton() {
-      this.showButton = !this.showButton;
+      this.showButton = !this.showButton; //← When method triggers changes value to opposite of current value(true/false)
       console.log("I come from App.vue", this.showButton);
     },
   },

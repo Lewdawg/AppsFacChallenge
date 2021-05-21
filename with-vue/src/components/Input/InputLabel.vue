@@ -5,7 +5,7 @@
 <script>
 module.exports = {
   name: "InputLabels",
-  props: ["text"],
+  props: ["text"], //← Value passed from parent element.
 };
 </script>
 

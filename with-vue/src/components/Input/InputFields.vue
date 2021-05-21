@@ -5,33 +5,28 @@
 
     <Input-label text="password" />
     <div id="eyePosition">
-      <input
-        :type="passwordFieldType"
-        v-model="password"
-        placeholder="Enter password"
-      />
+      <input :type="passwordFieldType" placeholder="Enter password" />
       <img @click="showPassword" src="../../assets/eye.svg" alt="" />
     </div>
   </div>
 </template>
 
+//Defining text attribute values and passing them down into child component (inputLabel.vue).
 
 <script>
+//↓ Importing child component
 import InputLabel from "./InputLabel";
-
-//(line 9)':' keeps the type attribute (or any other) up to date with the value of the passwordFieldType property. (in this case)
 
 export default {
   name: "InputFields",
   data() {
     return {
-      password: "", //←Keeps value up to date, if you add text will show it by default
-      passwordFieldType: "password", // ←Default setting password
+      passwordFieldType: "password", // ←(line 8)':' binds the value of the passwordFieldType to the 'type' attribute.
     };
   },
   methods: {
     showPassword() {
-      //↓ onclick setting passwordFieldType to opposite of what is current
+      //↓ onclick - set passwordFieldType to opposite of what is current in the Tenery.
       this.passwordFieldType =
         this.passwordFieldType === "password" ? "text" : "password";
     },
@@ -50,7 +45,7 @@ export default {
   margin: 0 auto;
 }
 #inputFields input {
-  padding-left: 1rem;
+  padding-left: 1rem; /*← For text inside input */
   font-size: 1.2rem;
   height: 4vh;
   background-color: rgb(240, 240, 240);

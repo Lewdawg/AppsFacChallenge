@@ -12,6 +12,8 @@
   </div>
 </template>
 
+//When Terms and Conditions are 'click' trigger method ('noTandC')
+
 <script>
 module.exports = {
   name: "Checkbox",
@@ -38,6 +40,7 @@ label {
   position: relative;
   padding-left: 15px;
 }
+/*↓ defining the checkbox */
 label:before {
   content: "";
   outline: 1px solid black;
@@ -48,13 +51,18 @@ label:before {
   left: 5px;
   bottom: 3px;
 }
+label:hover {
+  cursor: pointer;
+}
 
+/*↓ 'checked' in a value form using type:checkbox */
 #tAndc:checked + label:before {
   background-color: navy;
 }
 
+/*↓ Hides the defaul checkbox */
 #tAndc {
-  display: none; /* ← Hides the defaul checkbox */
+  display: none;
 }
 
 #checkbox {
